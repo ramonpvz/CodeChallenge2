@@ -30,6 +30,7 @@
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="UoK-Gz-SRA" appends="YES" id="xlL-eg-qYT"/>
+                                            <segue destination="Kw3-gQ-QBR" kind="show" id="oon-M1-h17"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -54,7 +55,25 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="533" y="-271"/>
+            <point key="canvasLocation" x="545" y="-271"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="NjX-bT-SCb">
+            <objects>
+                <viewController id="Kw3-gQ-QBR" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eHq-u9-BXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="L3h-gJ-lQQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QO5-61-1G5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrf-Im-5yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="-271"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KJD-wr-fYc">

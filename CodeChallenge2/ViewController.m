@@ -38,10 +38,14 @@
     frankfurt.state = @"Hessen";
     [self.cities addObject:frankfurt];
     
-//    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action: @selector(swipeGestureHandler)];
-//    [recognizer setDirection: (UISwipeGestureRecognizerDirectionLeft)];
-//    [self.tableView addGestureRecognizer:recognizer];
-//    [recognizer release];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Test...........");
+    
+    UIViewController *detinationViewCtrl = segue.destinationViewController;
+    
+    
     
 }
 

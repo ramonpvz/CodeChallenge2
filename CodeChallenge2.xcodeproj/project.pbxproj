@@ -15,6 +15,7 @@
 		C376B46F19E82D2F002E29D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C376B46D19E82D2F002E29D9 /* LaunchScreen.xib */; };
 		C376B47B19E82D2F002E29D9 /* CodeChallenge2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B47A19E82D2F002E29D9 /* CodeChallenge2Tests.m */; };
 		C376B48619E82D5D002E29D9 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B48519E82D5D002E29D9 /* City.m */; };
+		C376B4ED19E87622002E29D9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B4EC19E87622002E29D9 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		C376B47A19E82D2F002E29D9 /* CodeChallenge2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeChallenge2Tests.m; sourceTree = "<group>"; };
 		C376B48419E82D5D002E29D9 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		C376B48519E82D5D002E29D9 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		C376B4EB19E87622002E29D9 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		C376B4EC19E87622002E29D9 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				C376B45E19E82D2F002E29D9 /* Supporting Files */,
 				C376B48419E82D5D002E29D9 /* City.h */,
 				C376B48519E82D5D002E29D9 /* City.m */,
+				C376B4EB19E87622002E29D9 /* DetailsViewController.h */,
+				C376B4EC19E87622002E29D9 /* DetailsViewController.m */,
 			);
 			path = CodeChallenge2;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C376B46719E82D2F002E29D9 /* ViewController.m in Sources */,
+				C376B4ED19E87622002E29D9 /* DetailsViewController.m in Sources */,
 				C376B46419E82D2F002E29D9 /* AppDelegate.m in Sources */,
 				C376B48619E82D5D002E29D9 /* City.m in Sources */,
 				C376B46119E82D2F002E29D9 /* main.m in Sources */,
@@ -418,6 +424,7 @@
 				C376B48019E82D2F002E29D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C376B48119E82D2F002E29D9 /* Build configuration list for PBXNativeTarget "CodeChallenge2Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				C376B48319E82D2F002E29D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
