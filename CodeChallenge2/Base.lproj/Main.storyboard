@@ -19,6 +19,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-FP-hrL">
                                 <rect key="frame" x="-6" y="40" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCellID" id="21G-Rp-DNg">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -28,7 +29,7 @@
                                         </tableViewCellContentView>
                                         <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Lfl-XS-snk" appends="YES" id="Pog-Ca-DFS"/>
+                                            <outletCollection property="gestureRecognizers" destination="UoK-Gz-SRA" appends="YES" id="xlL-eg-qYT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -39,6 +40,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="1tc-L6-V5Q"/>
                     <connections>
@@ -46,14 +48,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Lfl-XS-snk">
+                <swipeGestureRecognizer direction="right" id="UoK-Gz-SRA">
                     <connections>
-                        <action selector="swipeGestureHandler:" destination="vXZ-lx-hvc" id="kZR-YS-29M"/>
-                        <outlet property="delegate" destination="vXZ-lx-hvc" id="uTH-b1-HAj"/>
+                        <action selector="swipeGestureHandler:" destination="vXZ-lx-hvc" id="183-Wz-3Wq"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="951" y="136"/>
+            <point key="canvasLocation" x="533" y="-271"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KJD-wr-fYc">

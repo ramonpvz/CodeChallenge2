@@ -37,21 +37,34 @@
     City *frankfurt = [[City alloc] initWithName:@"Frankfurt"];
     frankfurt.state = @"Hessen";
     [self.cities addObject:frankfurt];
-
+    
+//    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action: @selector(swipeGestureHandler)];
+//    [recognizer setDirection: (UISwipeGestureRecognizerDirectionLeft)];
+//    [self.tableView addGestureRecognizer:recognizer];
+//    [recognizer release];
+    
 }
 
-- (IBAction) swipeGestureHandler:(UIGestureRecognizer *)sender {
-    if (sender.state == UIGestureRecognizerStateEnded)
-    {
-        UITableViewCell *cell = (UITableViewCell* ) sender.view;
-         NSLog(@"%@", cell);
+- (IBAction) swipeGestureHandler:(UIGestureRecognizer *)gestureRecognizer {
+    
+    //Get location in swipe
+    CGPoint location = [gestureRecognizer locationInView:self.tableView];
+    
+    //Get the corresponding index path within the table view
+    NSIndexPath *indextPath = [self.tableView indexPathForRowAtPoint: location];
+    
+    //Check if indexPath is valid
+    if (indextPath) {
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indextPath];
         for (City *city in self.cities) {
             if ([city.name isEqualToString: cell.textLabel.text]) {
                 [self.cities removeObject:city];
+                break;
             }
         }
         [self.tableView reloadData];
     }
+
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
