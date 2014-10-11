@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "City.h"
+#import "DetailsViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -40,13 +41,15 @@
     
 }
 
+//This method is intercepted when the segue (->) is added in the story board.
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"Test...........");
-    
-    UIViewController *detinationViewCtrl = segue.destinationViewController;
-    
-    
-    
+
+    DetailsViewController *detailsViewController = segue.destinationViewController;
+
+    NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
+
+    detailsViewController.city = [self.cities objectAtIndex:ip.row];
+
 }
 
 - (IBAction) swipeGestureHandler:(UIGestureRecognizer *)gestureRecognizer {

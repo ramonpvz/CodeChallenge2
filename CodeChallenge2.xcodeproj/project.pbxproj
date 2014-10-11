@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3704C4519E89E1A0059D7BD /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = C3704C4319E89E1A0059D7BD /* ReadMe */; };
 		C376B46119E82D2F002E29D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B46019E82D2F002E29D9 /* main.m */; };
 		C376B46419E82D2F002E29D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B46319E82D2F002E29D9 /* AppDelegate.m */; };
 		C376B46719E82D2F002E29D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B46619E82D2F002E29D9 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		C376B47B19E82D2F002E29D9 /* CodeChallenge2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B47A19E82D2F002E29D9 /* CodeChallenge2Tests.m */; };
 		C376B48619E82D5D002E29D9 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B48519E82D5D002E29D9 /* City.m */; };
 		C376B4ED19E87622002E29D9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C376B4EC19E87622002E29D9 /* DetailsViewController.m */; };
+		C3C1FCEE19E8B14F006BB2EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1FCED19E8B14F006BB2EF /* WikiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3704C4319E89E1A0059D7BD /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 		C376B45B19E82D2F002E29D9 /* CodeChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376B45F19E82D2F002E29D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C376B46019E82D2F002E29D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +49,8 @@
 		C376B48519E82D5D002E29D9 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		C376B4EB19E87622002E29D9 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		C376B4EC19E87622002E29D9 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		C3C1FCEC19E8B14F006BB2EF /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		C3C1FCED19E8B14F006BB2EF /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,9 @@
 				C376B48519E82D5D002E29D9 /* City.m */,
 				C376B4EB19E87622002E29D9 /* DetailsViewController.h */,
 				C376B4EC19E87622002E29D9 /* DetailsViewController.m */,
+				C3704C4319E89E1A0059D7BD /* ReadMe */,
+				C3C1FCEC19E8B14F006BB2EF /* WikiViewController.h */,
+				C3C1FCED19E8B14F006BB2EF /* WikiViewController.m */,
 			);
 			path = CodeChallenge2;
 			sourceTree = "<group>";
@@ -209,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3704C4519E89E1A0059D7BD /* ReadMe in Resources */,
 				C376B46A19E82D2F002E29D9 /* Main.storyboard in Resources */,
 				C376B46F19E82D2F002E29D9 /* LaunchScreen.xib in Resources */,
 				C376B46C19E82D2F002E29D9 /* Images.xcassets in Resources */,
@@ -231,6 +240,7 @@
 			files = (
 				C376B46719E82D2F002E29D9 /* ViewController.m in Sources */,
 				C376B4ED19E87622002E29D9 /* DetailsViewController.m in Sources */,
+				C3C1FCEE19E8B14F006BB2EF /* WikiViewController.m in Sources */,
 				C376B46419E82D2F002E29D9 /* AppDelegate.m in Sources */,
 				C376B48619E82D5D002E29D9 /* City.m in Sources */,
 				C376B46119E82D2F002E29D9 /* main.m in Sources */,

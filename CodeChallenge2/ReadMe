@@ -1,0 +1,10 @@
+:::TIPS:::
+1. Linking two VCs using a Table View>Table View Cell.
+    The "Table View Cell" is linked to the target view controller (Story board).
+    The origin VC implements the following method to pass the corresponding data:
+        - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+        *Method intercepted on the tap event.
+2. Linking UILabel to View Controller.
+    Add a "Tap Gesture Recognizer" over the UILabel.
+    Once the Gesture is over the label;
+    Link using the Gesture -> Triggered Segues, and drag/link to the target View Controller.

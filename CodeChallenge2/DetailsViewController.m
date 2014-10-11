@@ -7,17 +7,36 @@
 //
 
 #import "DetailsViewController.h"
+#import "WikiViewController.h"
 
 @interface  DetailsViewController()
+@property (weak, nonatomic) IBOutlet UITextField *txtCity;
+@property (weak, nonatomic) IBOutlet UITextField *txtState;
 
 @end
 
 @implementation DetailsViewController
 
-
 - (void)viewDidLoad {
+
+    self.txtCity.text = self.city.name;
+    self.txtState.text = self.city.state;
+
+}
+
+//This method is intercepted when the segue (->) is added in the story board.
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    NSLog(@"Entering...");
+    WikiViewController *wiki = [[WikiViewController alloc] init];
+    
+    wiki.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:wiki animated:YES completion:^{[self animationCompleted];}];
+
+}
+
+- (void) animationCompleted {
     
 }
+
 @end
