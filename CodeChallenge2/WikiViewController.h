@@ -10,4 +10,6 @@
 
 @interface WikiViewController : UIViewController
 
+@property NSString *country;
+
 @end

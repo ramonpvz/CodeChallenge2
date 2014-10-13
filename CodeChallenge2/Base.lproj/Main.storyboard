@@ -130,7 +130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-Kf-ofT">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-Kf-ofT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -139,6 +139,12 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hLa-Kf-ofT" secondAttribute="trailing" id="AVa-3s-eAU"/>
+                            <constraint firstItem="jn6-k8-3on" firstAttribute="top" secondItem="hLa-Kf-ofT" secondAttribute="bottom" id="fIw-Dc-vbE"/>
+                            <constraint firstItem="hLa-Kf-ofT" firstAttribute="leading" secondItem="xFg-IV-cWx" secondAttribute="leading" id="neq-Zr-pbt"/>
+                            <constraint firstItem="hLa-Kf-ofT" firstAttribute="top" secondItem="xFg-IV-cWx" secondAttribute="top" id="rA5-AM-YaU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="hLa-Kf-ofT" id="sBr-nc-OnH"/>

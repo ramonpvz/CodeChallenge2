@@ -8,6 +8,8 @@
 
 #import "WikiViewController.h"
 
+#define HOME_URL @"http://en.wikipedia.org/wiki/"
+
 @interface WikiViewController() <UIWebViewDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -17,7 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    NSString *wikiTarget = @"http://en.wikipedia.org/wiki/";
+    NSLog(@"COUNTRY: %@", [self.country description]);
+    wikiTarget = [wikiTarget stringByAppendingString:[self.country description]];
+    NSURL *url = [NSURL URLWithString:wikiTarget];
+    NSLog(@"URL: %@", [wikiTarget stringByAppendingString:wikiTarget]);
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:urlRequest];
     self.webView.scrollView.delegate = self;

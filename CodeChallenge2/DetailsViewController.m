@@ -27,11 +27,15 @@
 //This method is intercepted when the segue (->) is added in the story board.
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    WikiViewController *wiki = [[WikiViewController alloc] init];
+    //WikiViewController *wiki = [[WikiViewController alloc] init];
+    
+    WikiViewController *wiki = segue.destinationViewController;
     
     wiki.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
-    [self presentViewController:wiki animated:YES completion:^{[self animationCompleted];}];
+    wiki.country = self.txtCity.text;
+    
+    //[self presentViewController:wiki animated:YES completion:^{[self animationCompleted];}];
 
 }
 
